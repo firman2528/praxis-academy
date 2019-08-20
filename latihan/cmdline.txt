@@ -1,0 +1,63 @@
+firman@firman-VirtualBox:~$ mkdir praxis
+firman@firman-VirtualBox:~$ mkdir /praxis/minggu-01
+mkdir: cannot create directory ‘/praxis/minggu-01’: No such file or directory
+firman@firman-VirtualBox:~$ mkdir praxis/minggu-01
+firman@firman-VirtualBox:~$ mkdir praxis/minggu-01/hari-01
+firman@firman-VirtualBox:~$ cd hari-01
+bash: cd: hari-01: No such file or directory
+firman@firman-VirtualBox:~$ cd praxis/minggu-01/hari-01
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ cat > cmdline.txt
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ man
+What manual page do you want?
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ man
+What manual page do you want?
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ man man
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ cat Tools
+cat: Tools: No such file or directory
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ history
+    1  mkdir praxis/minggu-01//hari-01
+    2  mkdir praxis
+    3  cd praxis
+    4  mkdir minggu-01
+    5  cd minggu-01
+    6  mkdir hari-01
+    7  cd hari-01
+    8  sudo apt install git-all
+    9  git config --list --show-origin
+   10  git config
+   11  git config --global user.name="firman2528"
+   12  git config --global user.anem "firman2528"
+   13  git config --global user.email "firman.yuspriyadi@gmail.com"
+   14  cat>cmdline.txt
+   15  cat cmdline.txt
+   16  ls
+   17  cd praxis
+   18  ls
+   19  cd minggu-01
+   20  ls
+   21  cd hari-01
+   22  ls
+   23  mkdir /praxis/minggu-01/hari-01
+   24  mkdir $HOME/praxis/minggi-01/hari-01
+   25  mkdir praxis/minggi-01/hari-01
+   26  mkdir /$HOME/praxis/minggu-01/hari-01
+   27  mkdir praxis
+   28  mkdir praxis/minggu-01/hari-01
+   29  ls praxis
+   30  mkdir praxis/minggu-01
+   31  mkdir praxis/minggu-01/hari-01
+   32  ls
+   33  cd praxis/minggu-01/hari-01
+   34  mkdir praxis
+   35  mkdir /praxis/minggu-01
+   36  mkdir praxis/minggu-01
+   37  mkdir praxis/minggu-01/hari-01
+   38  cd hari-01
+   39  cd praxis/minggu-01/hari-01
+   40  cat > cmdline.txt
+   41  man
+   42  man man
+   43  cat Tools
+   44  history
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ 
+

@@ -1,0 +1,221 @@
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ cat>30shellscript.txt
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ echo "Hello World"
+Hello World
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano First.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash First.sh
+Hello World
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano echo_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash echo_example.sh
+Printing text with newline
+Printing text without newline
+Removing 	 backslash 	 characters
+
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano comment_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash comment_example.sh
+60
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano multiline-comment.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash multiline-comment.sh
+25
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano while_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash while_example.sh
+1
+2
+3
+4
+5
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano for_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash for_example.sh
+10 9 8 7 6 5 4 3 2 1 
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano user_input.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash user_input.sh
+Enter Your Name
+Firman
+Welcome Firman to LinuxHint
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano simple_if.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash simple_if.sh
+It is a two digit number
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano if_with_AND.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash if_with_AND.sh
+Enter username
+admin
+Enter Password
+1234
+invalid user
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash if_with_AND.sh
+Enter username
+admin
+Enter Password
+secret
+valid user
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano if_with_OR.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash if_with_OR.sh
+Enter any number
+40
+You lost the game
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash if_with_OR.sh
+Enter any number
+15
+You won the game
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ 
+
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano elseif_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash elseif_example.sh
+Enter your lucky number
+101
+You got 1st prize
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash elseif_example.sh
+Enter your lucky number
+999
+You got 3rd prize
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash elseif_example.sh
+Enter your lucky number
+100
+Sorry, try for the next time
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano case_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash case_example.sh
+Enter your lucky number
+101
+You got 1st prize
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash case_example.sh
+Enter your lucky number
+510
+You got 2nd prize
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash case_example.sh
+Enter your lucky number
+999
+You got 3rd prize
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash case_example.sh
+Enter your lucky number
+777
+Sorry, try for the next time
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano command_line.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash command_line.sh
+Total arguments : 0
+1st Argument = 
+2nd argument = 
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash command_line.sh Linux Hint
+Total arguments : 2
+1st Argument = Linux
+2nd argument = Hint
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano command_line_nanes.shfirman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash command_line_names X=45 Y=30
+bash: command_line_names: No such file or directory
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash command_line_names.sh X=45 Y=30
+bash: command_line_names.sh: No such file or directory
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash command_line_nanes X=45 Y=30
+bash: command_line_nanes: No such file or directory
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash command_line_nanes.sh X=45 Y=30
+X+Y=0
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano command_line_names.shfirman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash command_line_names.sh X=45 Y=30
+X+Y=75
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano string_combine.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash string_combine.sh
+LinuxHint
+Linux+Hint is a good tutorial blog site
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano substring_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash substring_example.sh
+Linux
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano add_number.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash add_number.sh
+Enter first number
+25
+Enter second number
+56
+The result of addition=81
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano function_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash function_example.sh
+I like bash programming
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano function_parameter.shfirman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash function_parameter.shArea is : 200
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano function_return.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash function_return.sh
+Enter your name
+Firman Yuspriyadi
+Return value of the function is Hello, Firman Yuspriyadi
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano make_directory.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash make_directory.sh
+Enter directory name
+tes_direktori
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ ls
+30shellscript.txt      elseif_example.sh      make_directory.sh
+add_number.sh          First.sh               multiline-comment.sh
+case_example.sh        for_example.sh         simple_if.sh
+cmdline.txt            function_example.sh    string_combine.sh
+command_line_names.sh  function_parameter.sh  substring_example.sh
+command_line.sh        function_return.sh     tes_direktori
+comment_example.sh     if_with_AND.sh         user_input.sh
+echo_example.sh        if_with_OR.sh          while_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano directory.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash directory.sh
+Enter directory name
+newdirektori
+Directory created
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ ls
+30shellscript.txt      elseif_example.sh      multiline-comment.sh
+add_number.sh          First.sh               newdirektori
+case_example.sh        for_example.sh         simple_if.sh
+cmdline.txt            function_example.sh    string_combine.sh
+command_line_names.sh  function_parameter.sh  substring_example.sh
+command_line.sh        function_return.sh     tes_direktori
+comment_example.sh     if_with_AND.sh         user_input.sh
+directory.sh           if_with_OR.sh          while_example.sh
+echo_example.sh        make_directory.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano read_file.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ cat>book.txt
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash read.file.sh
+bash: read.file.sh: No such file or directory
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash read_file.sh
+1. Pro AngularJS
+2. Learning JQuery
+3. PHP Programming
+4. CodeIgniter 3
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ cat book.txt
+1. Pro AngularJS
+2. Learning JQuery
+3. PHP Programming
+4. CodeIgniter 3
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano delete_file.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash delete_file.sh
+Enter filename to remove
+book.txt
+rm: remove regular file 'book.txt'? y
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ cat>book.txt
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano append_file.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash append_file.sh
+Before appending the file
+1. Pro AngularJS
+2. Learning JQuery
+3. PHP Programming
+4. Codeigninter 3
+After appending the file
+1. Pro AngularJS
+2. Learning JQuery
+3. PHP Programming
+4. Codeigninter 3
+Learning Laravel 5
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano file_exist.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash file_exist.txt
+bash: file_exist.txt: No such file or directory
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash file_exist.sh book.txt
+File exists
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash file_exist.sh book2.txt
+File does not exist
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano mail_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash mail_example.sh
+mail_example.sh: line 4: mail -s $Subject $Recipient <<< $Message: command not found
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano mail_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash mail_example.sh
+mail_example.sh: line 4: to: command not found
+mail_example.sh: line 5: mail: command not found
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano date_pare.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash date_parse.sh
+bash: date_parse.sh: No such file or directory
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash date_pare.sh
+Sen Agu 12 18:54:10 WIB 2019
+Current Date is: 12-08-2019
+Current Time is: 18:54:10
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ nano wait_example.sh
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ bash wait_example.sh
+Wait command
+Exited with status 0
+firman@firman-VirtualBox:~/praxis/minggu-01/hari-01$ 
+
+
