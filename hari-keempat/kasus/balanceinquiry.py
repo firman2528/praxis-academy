@@ -1,7 +1,7 @@
 from withdraw import WithDraw
 
 class Balanceinquiry :
-    balance = 0 
+    balance = 0
 
     def __init__(self) :
         pass

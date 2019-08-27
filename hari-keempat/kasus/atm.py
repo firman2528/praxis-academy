@@ -4,6 +4,7 @@ from deposit import Deposit
 
 class Atm() :
 
+    sisa = 0
     def checkbalance(self) :
         print("Your current balance is {}".format(Balanceinquiry.getbalance()))
 
@@ -16,12 +17,17 @@ class Atm() :
         elif (Balanceinquiry.balance < nominal) :
             print("Saldo anda tidak mencukupi")
         else :
-            self.sisa = Balanceinquiry.balance - nominal
-            Balanceinquiry.setbalance(self.sisa)
-            return Balanceinquiry.setbalance
+            Atm.sisa = Balanceinquiry.balance - nominal
+            Balanceinquiry.setbalance(Atm.sisa)
+            print("Anda menarik uang sejumlah :",nominal)
+            print("Saldo anda adalah : ", Balanceinquiry.balance)
     
     @staticmethod
     def depositmoney(nominal) :
         Deposit.count(nominal)
+        Balanceinquiry.balance += Deposit.totaldeposit
         print("\nYou deposited the ammount of {}".format(Deposit.getdeposit()))
-        
+
+Atm.depositmoney(2000)
+print('\n')
+Atm.withdrawmoney(1000)
