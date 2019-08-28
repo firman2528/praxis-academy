@@ -1,6 +1,6 @@
 import unittest
 target = __import__("my_sum")
-# sum = target.sum
+sum = target.sum
 # bisa juga seperti dibawah ini
 # from my_sum import sum
 from fractions import Fraction
@@ -24,4 +24,4 @@ class TestSum(unittest.TestCase) :
             result = sum(data)
 
 if __name__ == '__main__' :
-    unittest.main
+    unittest.main()
