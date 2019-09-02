@@ -65,7 +65,7 @@ def run_transaction(conn, op) :
 def test_retry_loop(conn) :
     with conn.cursor() as cur :
         cur.execute('SELECT now()')
-        cur.execute("SELECT crdb_internal.force_retry('ls'::INTERVAL")
+        cur.execute("SELECT crdb_internal.force_retry('ls'::INTERVAL)")
     logging.debug("test_retry_loop() : status message : {}".format(cur.status))
 
 
