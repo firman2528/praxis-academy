@@ -286,7 +286,7 @@ def main() :
         "from customer c "
         "left join sewa_detail s "
         "on c.cust_no = s.cust_no "
-        "right join film f "
+        "left join film f "
         "on f.film_no = s.film_no "
         "where c.nama =%(nama)s")
     nama = {
