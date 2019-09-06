@@ -1,0 +1,7 @@
+{
+  "test/test_sum.py::test_sum_tupple": true, 
+  "test/test_sum_init.py": true, 
+  "test/test_sum_unittest.py::TestSum::test_sum_tuple": true, 
+  "test_sum.py::test_sum_tupple": true, 
+  "test_sum_unittest.py::TestSum::test_sum_tuple": true
+}

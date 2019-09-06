@@ -35,7 +35,7 @@ def create_table(conn) :
         " sewa_id INT NOT NULL REFERENCES sewa (sewa_id) ON DELETE CASCADE,"
         " film_no INT NOT NULL REFERENCES film (film_no) ON DELETE CASCADE)")
 
-        cur.execute("UPSERT INTO customer (cust_no, nama, alamat) VALUES (1, 'Firman', 'Bogor'), (2, 'Cherry Fonna', 'Bojong'),"
+        cur.execute("Insert INTO customer (cust_no, nama, alamat) VALUES (1, 'Firman', 'Bogor'), (2, 'Cherry Fonna', 'Bojong'),"
             "(3, 'Nikhesia', 'Bojong'), (4, 'Khaira', 'Bojong')")
         cur.execute("UPSERT INTO genre (genre_id, nama) VALUES (1,'Action'), (2,'Horror'), (3,'Drama'), (4,'Serial')")
         cur.execute("UPSERT INTO film (film_no, judul, genre_id) VALUES (1,'John Wick', 1),(2,'Spiderman', 1), (3,'Tayo', 1), (4,'Anabele', 2),"

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for customer in customers %}
+    
+            <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Nomor</th>
+                      <th>Nama</th>
+                      <th>Alamat</th>
+                    </tr>
+                    {% for customer in customers %}
+                    <tr>
+                      <td>{{ loop.index }}</td>
+                      <td>{{ customer[1]}}</td>
+                      <td>{{ customer[2]}}</td>
+                    </tr>
+                    {% endfor %}
+            </table>
+
+    {% endfor %}
+{% endblock content %}

@@ -4,6 +4,9 @@ from datetime import datetime
 from werkzeug import secure_filename
 from flask import send_from_directory
 import os
+from flask import abort
+from flask import request
+
 
 users = {
     "mitsuhiko": {
@@ -28,6 +31,22 @@ app.config["ALLOWED_IMAGE_EXTENSIONS"] = ["JPEG", "JPG"]
 app.config["UPLOAD_FOLDER"] = "static/uploads"
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+
+@app.errorhandler(404) 
+def page_not_found(e) :
+    app.logger.info(f'Page not found : {request.url}')
+    return render_template("error_handlers/404.html"), 404
+
+
+@app.errorhandler(403) 
+def forbidden(e) :
+    return render_template("error_hanlders/handler.html"), STATUS_CODE
+
+@app.errorhandler(500)
+def server_error(e) :
+    # email_admin(message="Server error", url=request.url, error=e)
+    app.logger.error(f"Server error  : {request.url}")
+    return render_template("error_handlers/500.html"), 500
 
 def allowed_image_filesize(filesize) :
     if int(filesize) <= app.config["MAX_IMAGE_FILESIZE"] :
@@ -186,6 +205,11 @@ def jinja() :
 @app.template_filter("clean_date")
 def clean_date(dt) :
     return dt.strftime("%d %b %Y")
+
+
+@app.route('/json', methods=['POST'])
+def json_example() :
+    return "Thanks"
 
 
 
