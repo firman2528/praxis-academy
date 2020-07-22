@@ -19,7 +19,7 @@ class Robot :
 
     
     def say_hi(self) :
-        print("Greeting my master call me {}".format(self.nama))
+        print("Greeting my main call me {}".format(self.nama))
 
     # method ini belong to class not object
     @classmethod
