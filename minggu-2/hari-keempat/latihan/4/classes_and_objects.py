@@ -15,7 +15,7 @@ class Robot :
             print("There are still {:d} robots working".format(Robot.population))
 
     def say_hi(self) :
-        print("Greetings, my masters call me {}".format(self.name))
+        print("Greetings, my mains call me {}".format(self.name))
 
 
     @classmethod
